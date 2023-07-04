@@ -31,21 +31,27 @@
 
 <body>
 <div id="app">
+    @guest
+        @yield('content')
+    @else
     <div class="main-wrapper main-wrapper-1">
         <div class="navbar-bg"></div>
 
-        {{--Navbar Section Start--}}
 
-        @include('partials.navbar')
+            {{--Navbar Section Start--}}
 
-        {{--Navbar Section End--}}
+            @include('partials.navbar')
+
+            {{--Navbar Section End--}}
 
 
-        {{--Sidebar Section Start--}}
+            {{--Sidebar Section Start--}}
 
-        @include('partials.sidebar')
+            @include('partials.sidebar')
 
-        {{--Sidebar Section End--}}
+            {{--Sidebar Section End--}}
+
+
 
         <!-- Main Content -->
         <div class="main-content">
@@ -53,13 +59,14 @@
         </div>
         <footer class="main-footer">
             <div class="footer-left">
-                Copyright &copy; 2023 <div class="bullet"></div> Design By <a href="https://nauval.in/">MaintainIT Solns</a>
+                Copyright &copy; 2023 <div class="bullet"></div> Designed By: <a href="https://nauval.in/">MaintainIT</a>
             </div>
             <div class="footer-right">
 
             </div>
         </footer>
     </div>
+    @endguest
 </div>
 
 <!-- General JS Scripts -->
