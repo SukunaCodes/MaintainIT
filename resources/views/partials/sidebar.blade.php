@@ -19,7 +19,7 @@
                 <a href="#" class="nav-link"><i class="fas fa-fire"></i><span>Agent Suppliers</span></a>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="index-0.html">Add Agent Supplier</a></li>
-                    <li class=active><a class="nav-link" href="index.html">Ecommerce Dashboard</a></li>
+                    <li class=active><a class="nav-link" href="index.html">All Agent Suppliers</a></li>
                 </ul>
             </li>
             <li class="menu-header">Log Out</li>
