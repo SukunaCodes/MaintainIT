@@ -22,5 +22,5 @@ Auth::routes();
 
 Route::middleware(['auth']) -> group(function(){
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
-    Route::resource('/agent-supplier', App\Http\Controllers\AgentSupplierController::class,['names' => 'agent-supplier']);
+    Route::resource('/agent-suppliers', App\Http\Controllers\AgentSupplierController::class,['names' => 'agent-supplier']);
 });

@@ -11,7 +11,7 @@ class AgentSupplierController extends Controller
      */
     public function index()
     {
-        //
+        return view('agentSupplier.index');
     }
 
     /**
